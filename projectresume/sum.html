@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summary</title>
+</head>
+
+<body>
+    <form action="skill.html">
+        <strong>Summary:<em>(Give a brief on what you are)</em></strong><br>
+        <textarea id="summary" rows="6" cols="60"></textarea><br><br>
+        <button type="submit" onclick="fun2()">Next</button></span>
+    </form>
+
+    <script>
+        function fun2() {
+            //summary
+            var sum = document.getElementById("summary").value;
+            localStorage.setItem("summarys", sum);
+        }
+    </script>
+</body>
+
+</html>

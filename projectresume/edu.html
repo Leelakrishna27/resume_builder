@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+</head>
+
+<body>
+    <form action="sum.html">
+        <span>
+    <strong>Graduation:</strong><br><br> Course:
+    <select id="select">
+				<option id="btech" value="B.Tech">B.Tech</option>
+				<option id="mba" value="M.B.A">M.B.A</option>
+				<option id="mtech" value="M.Tech">M.Tech</option>
+            </select><br><br> College name:<input type="text" id="college1" name="college1" placeholder="ABCD Institute Of Technology" size="30"><br><br> %/CGPA:
+    <input type="number" id="cgpa1" name="cgpa1"><br><br></span>
+
+        <span>
+    <strong>Intermediate:</strong><br><br> 
+    College name:<input type="text" id="college2" name="college2" placeholder="ABCD college" size="30"><br><br> 
+    %/CGPA:<input type="number" id="cgpa2" name="cgpa2"><br><br></span>
+
+        <span>
+    <strong>10<sup>th</sup> Education:</strong><br> 
+    School name:<input type="text" id="school" name="school" placeholder="ABCD High School" size="30"><br><br> 
+    %/CGPA:<input type="number" id="cgpa3" name="cgpa3"><br><br></span>
+
+        <button type="submit" onclick="fun1()">Next</button></span>
+    </form>
+
+    <script>
+        function fun1() {
+            //Graduation
+            var deg = document.getElementById("select").value;
+            localStorage.setItem("selects", deg);
+
+            var col = document.getElementById("college1").value;
+            localStorage.setItem("college1s", col);
+
+            var cgpa1 = document.getElementById("cgpa1").value;
+            localStorage.setItem("cgpa1s", cgpa1);
+
+            //intermediate
+            var colg = document.getElementById("college2").value;
+            localStorage.setItem("college2s", colg);
+
+            var cgpa2 = document.getElementById("cgpa2").value;
+            localStorage.setItem("cgpa2s", cgpa2);
+
+            //10th class
+            var school = document.getElementById("school").value;
+            localStorage.setItem("schools", school);
+
+            var cgpa3 = document.getElementById("cgpa3").value;
+            localStorage.setItem("cgpa3s", cgpa3);
+        }
+    </script>
+
+</body>
+
+</html>

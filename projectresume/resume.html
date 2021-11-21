@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        .bdy {
+            width: 200vw;
+        }
+        
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            width: 40vw;
+            height: 10vh;
+        }
+        
+        th,
+        td {
+            width: 10vw;
+        }
+        
+        p {
+            display: inline;
+        }
+        
+        .icourses {
+            height: 10 0vh;
+            width: 200vw;
+        }
+        
+        h1,
+        h5 {
+            display: inline;
+        }
+        
+        .print {
+            visibility: collapse;
+        }
+        
+        .text1 {
+            font-size: 23vm;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="bdy">
+        <h1 id="iname"></h1><br>
+        <h5 id="iemail"></h5><br>
+        <h5 id="imobile"></h5><br>
+        <hr>
+        <strong>ACADEMIC QUALIFICATIONS</strong>
+        <table id="tabl">
+            <tr>
+                <th>Course</th>
+                <th>Institution name</th>
+                <th>% / CGPA</th>
+            </tr>
+            <tr>
+                <td id="iselect"></td>
+                <td id="icollege1"></td>
+                <td id="icgpa1"></td>
+            </tr>
+            <tr>
+                <td>Intermediate</td>
+                <td id="icollege2"></td>
+                <td id="icgpa2"></td>
+            </tr>
+            <tr>
+                <td>Class X</td>
+                <td id="ischool"></td>
+                <td id="icgpa3"></td>
+            </tr>
+
+        </table>
+
+
+        <div class="text1">
+            <br>
+            <strong>SUMMARY</strong><br>
+            <p id="isummary"></p> <br>
+            <br>
+
+
+
+            <span><strong>SKILLS</strong></span><br>
+            <span><strong><p>Programming Languages:</p></strong>
+    <p id="ic"></p>
+    <p id="icpp"></p>
+    <p id="icsharp"></p>
+    <p id="ijava"></p>
+    <p id="ipython"></p>
+    <p id="igo"></p>
+    <p id="ir"></p>
+    <p id="iruby"></p></span><br>
+
+
+            <span><strong><p>IT Constraints:</p></strong>
+    <p id="ids"></p>
+    <p id="ialgo"></p>
+    <p id="ios"></p>
+    <p id="icn"></p>
+    <p id="idbms"></p>
+    <p id="icc"></p>
+    <p id="ioop"></p>
+    </span><br>
+
+            <span><strong><p>Web Dev:</p></strong>
+        <p id="ihtml"></p>
+        <p id="icss"></p>
+        <p id="ijs"></p>
+        <p id="ibs"></p>
+        <p id="idjango"></p>
+        <p id="iflask"></p>
+        <p id="ireact"></p>
+        <p id="iangular"></p>
+        <p id="inodejs"></p>
+        <p id="iphp"></p></span><br>
+
+
+            <span><strong><p>DB Languages:</p></strong>
+            <p id="imysql"></p>
+            <p id="iaccess"></p>
+            <p id="idbase"></p>
+            <p id="ifoxpro"></p>
+            <p id="ioracle"></p>
+            <p id="ifirebase"></p>
+            </span><br><br>
+
+            <span><strong><p>ACHIEVEMENTS AND ACTIVITIES</p></strong><br>
+                <div id="icourses"></div>
+                </span><br><br>
+
+            <span><strong><p>PROJECTS</p></strong><br>
+                <p id="iprojects"></p>
+                </span><br>
+
+
+
+
+
+            <script>
+                document.getElementById("iname").innerHTML = localStorage.getItem("names");
+                document.getElementById("iemail").innerHTML = localStorage.getItem("emails");
+                document.getElementById("imobile").innerHTML = localStorage.getItem("mobiles");
+                document.getElementById("iselect").innerHTML = localStorage.getItem("selects");
+                document.getElementById("icollege1").innerHTML = localStorage.getItem("college1s");
+                document.getElementById("icgpa1").innerHTML = localStorage.getItem("cgpa1s");
+                document.getElementById("icollege2").innerHTML = localStorage.getItem("college2s");
+                document.getElementById("icgpa2").innerHTML = localStorage.getItem("cgpa2s");
+                document.getElementById("ischool").innerHTML = localStorage.getItem("schools");
+                document.getElementById("icgpa3").innerHTML = localStorage.getItem("cgpa3s");
+                document.getElementById("isummary").innerHTML = localStorage.getItem("summarys");
+
+                document.getElementById("ic").innerHTML = localStorage.getItem("cs");
+                document.getElementById("icpp").innerHTML = localStorage.getItem("cpps");
+                document.getElementById("icsharp").innerHTML = localStorage.getItem("csharps");
+                document.getElementById("ijava").innerHTML = localStorage.getItem("javas");
+                document.getElementById("ipython").innerHTML = localStorage.getItem("pythons");
+                document.getElementById("igo").innerHTML = localStorage.getItem("gos");
+                document.getElementById("ir").innerHTML = localStorage.getItem("rs");
+                document.getElementById("iruby").innerHTML = localStorage.getItem("rubys");
+
+                document.getElementById("ids").innerHTML = localStorage.getItem("dss");
+                document.getElementById("ialgo").innerHTML = localStorage.getItem("algos");
+                document.getElementById("ios").innerHTML = localStorage.getItem("oss");
+                document.getElementById("icn").innerHTML = localStorage.getItem("cns");
+                document.getElementById("idbms").innerHTML = localStorage.getItem("dbmss");
+                document.getElementById("icc").innerHTML = localStorage.getItem("ccs");
+                document.getElementById("ioop").innerHTML = localStorage.getItem("oops");
+
+                document.getElementById("ihtml").innerHTML = localStorage.getItem("htmls");
+                document.getElementById("icss").innerHTML = localStorage.getItem("csss");
+                document.getElementById("ijs").innerHTML = localStorage.getItem("jss");
+                document.getElementById("ibs").innerHTML = localStorage.getItem("bss");
+                document.getElementById("idjango").innerHTML = localStorage.getItem("djangos");
+                document.getElementById("iflask").innerHTML = localStorage.getItem("flasks");
+                document.getElementById("ireact").innerHTML = localStorage.getItem("reacts");
+                document.getElementById("iangular").innerHTML = localStorage.getItem("angulars");
+                document.getElementById("inodejs").innerHTML = localStorage.getItem("nodejss");
+                document.getElementById("iphp").innerHTML = localStorage.getItem("phps");
+
+                document.getElementById("imysql").innerHTML = localStorage.getItem("mysqls");
+                document.getElementById("iaccess").innerHTML = localStorage.getItem("accesss");
+                document.getElementById("idbase").innerHTML = localStorage.getItem("dbases");
+                document.getElementById("ifoxpro").innerHTML = localStorage.getItem("foxpros");
+                document.getElementById("ioracle").innerHTML = localStorage.getItem("oracles");
+                document.getElementById("ifirebase").innerHTML = localStorage.getItem("firebases");
+
+                document.getElementById("icourses").innerHTML = localStorage.getItem("coursess");
+                document.getElementById("iprojects").innerHTML = localStorage.getItem("projectss");
+            </script>
+            <div id="but"><button onclick="asd()">Print</button></div>
+        </div>
+    </div>
+    <script>
+        function asd() {
+            var div = document.getElementById("but");
+            div.remove();
+            window.print();
+        }
+    </script>
+</body>
+
+</html>

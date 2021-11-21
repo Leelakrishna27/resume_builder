@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>skill</title>
+
+</head>
+
+<body>
+
+    <form action="proj.html">
+
+        <span>
+    Programming Languages:<br> 
+    C<input id="c" type="checkbox" value="C">&nbsp;&nbsp;
+    C++<input id="cpp" type="checkbox" value="Cpp">&nbsp;&nbsp; 
+    C#<input id="csharp" type="checkbox" value="Csharp">&nbsp;&nbsp; 
+    Java<input id="java" type="checkbox" value="Java"><br> 
+    Python<input id="python" type="checkbox" value="Python">&nbsp;&nbsp; 
+    Go<input id="go" type="checkbox" value="Go">&nbsp;&nbsp; 
+    R<input id="r" type="checkbox" value="R">&nbsp;&nbsp; 
+    Ruby<input id="ruby" type="checkbox" value="Ruby"><br><br></span>
+
+        <span>
+    IT Constraints:<br>
+    Data Structures<input id="ds" type="checkbox" value="DS">&nbsp;&nbsp; 
+    Algorithms<input id="algo" type="checkbox" value="Algo">&nbsp;&nbsp; 
+    Operating Systems<input id="os" type="checkbox" value="OS"><br>
+    Computer Networking<input id="cn" type="checkbox" value="CN">&nbsp;&nbsp;
+    DBMS<input id="dbms" type="checkbox" value="Dbms">&nbsp;&nbsp; 
+    Cloud Computing<input id="cc" type="Checkbox" value="CC">&nbsp;&nbsp; 
+    OOP<input id="oop" type="checkbox" value="OOP"><br><br></span>
+
+
+        <span>
+    Web Dev:<br>
+    HTML<input id="html" type="checkbox" value="HTML">&nbsp;&nbsp; 
+    CSS<input id="css" type="checkbox" value="CSS">&nbsp;&nbsp; 
+    Javascript<input id="js" type="checkbox" value="JS">&nbsp;&nbsp;
+    BootStrap<input id="bs" type="checkbox" value="Bootstrap">&nbsp;&nbsp;
+    Django<input id="django" type="checkbox" value="Django"><br> 
+    Flask<input id="flask" type="checkbox" value="Flask">&nbsp;&nbsp; 
+    React<input id="react" type="checkbox" value="React">&nbsp;&nbsp; 
+    Angular<input id="angular" type="checkbox" value="Angular">&nbsp;&nbsp; 
+    NodeJS<input id="nodejs" type="checkbox" value="Nodejs">&nbsp;&nbsp; 
+    PHP<input id="php" type="checkbox" value="PHP"><br><br> </span>
+
+
+        <span>
+    Databases:<br> 
+    MySQL<input id="mysql" type="checkbox"  value="Mysql">&nbsp;&nbsp; 
+    Access<input id="access" type="checkbox"  value="Access">&nbsp;&nbsp;
+    dBase<input id="dbase" type="checkbox"  value="DBase"><br> 
+    FoxPro<input id="foxpro" type="checkbox"  value="Foxpro">&nbsp;&nbsp;
+    Oracle<input id="oracle" type="checkbox"  value="Oracle">&nbsp;&nbsp; 
+    Firebase<input id="firebase" type="checkbox"  value="Firebase"><br><br></span>
+
+        <button type="submit" onclick="fun3()">Next</button></span>
+    </form>
+
+
+    <script>
+        function fun3() {
+            //programming languages
+            var lang1 = document.getElementById("c").value;
+            localStorage.setItem("cs", lang1);
+
+            var lang2 = document.getElementById("cpp").value;
+            localStorage.setItem("cpps", lang2);
+
+            var lang3 = document.getElementById("csharp").value;
+            localStorage.setItem("csharps", lang3);
+
+            var lang4 = document.getElementById("java").value;
+            localStorage.setItem("javas", lang4);
+
+            var lang5 = document.getElementById("python").value;
+            localStorage.setItem("pythons", lang5);
+
+            var lang6 = document.getElementById("go").value;
+            localStorage.setItem("gos", lang6);
+
+            var lang7 = document.getElementById("r").value;
+            localStorage.setItem("rs", lang7);
+
+            var lang8 = document.getElementById("ruby").value;
+            localStorage.setItem("rubys", lang8);
+
+            //IT Constraints
+            var it1 = document.getElementById("ds").value;
+            localStorage.setItem("dss", it1);
+
+            var it2 = document.getElementById("algo").value;
+            localStorage.setItem("algos", it2);
+
+            var it3 = document.getElementById("os").value;
+            localStorage.setItem("oss", it3);
+
+            var it4 = document.getElementById("cn").value;
+            localStorage.setItem("cns", it4);
+
+            var it5 = document.getElementById("dbms").value;
+            localStorage.setItem("dbmss", it5);
+
+            var it6 = document.getElementById("cc").value;
+            localStorage.setItem("ccs", it6);
+
+            var it7 = document.getElementById("oop").value;
+            localStorage.setItem("oops", it7);
+
+
+            //web dev
+            var web1 = document.getElementById("html").value;
+            localStorage.setItem("htmls", web1);
+
+            var web2 = document.getElementById("css").value;
+            localStorage.setItem("csss", web2);
+
+            var web3 = document.getElementById("js").value;
+            localStorage.setItem("jss", web3);
+
+            var web4 = document.getElementById("bs").value;
+            localStorage.setItem("bss", web4);
+
+            var web5 = document.getElementById("django").value;
+            localStorage.setItem("djangos", web5);
+
+            var web6 = document.getElementById("flask").value;
+            localStorage.setItem("flasks", web6);
+
+            var web7 = document.getElementById("react").value;
+            localStorage.setItem("reacts", web7);
+
+            var web8 = document.getElementById("angular").value;
+            localStorage.setItem("angulars", web8);
+
+            var web9 = document.getElementById("nodejs").value;
+            localStorage.setItem("nodejss", web9);
+
+            var web10 = document.getElementById("php").value;
+            localStorage.setItem("phps", web10);
+
+            //databases
+            var db1 = document.getElementById("mysql").value;
+            localStorage.setItem("mysqls", db1);
+
+            var db2 = document.getElementById("access").value;
+            localStorage.setItem("accesss", db2);
+
+            var db3 = document.getElementById("dbase").value;
+            localStorage.setItem("dbases", db3);
+
+            var db4 = document.getElementById("foxpro").value;
+            localStorage.setItem("foxpros", db4);
+
+            var db5 = document.getElementById("oracle").value;
+            localStorage.setItem("oracles", db5);
+
+            var db6 = document.getElementById("firebase").value;
+            localStorage.setItem("firebases", db6);
+        }
+    </script>
+
+</body>
+
+</html>

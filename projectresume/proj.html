@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projects</title>
+</head>
+
+<body>
+    <form action="resume.html">
+        <strong>Achievments and activities:<em>(List the Courses and certifications)</em></strong><br>
+        <textarea id="courses" rows="10" cols="60"></textarea><br><br>
+
+        <strong>Projects:<em>(Each with title and brief description)</em></strong><br>
+        <textarea id="projects" rows="10" cols="60"></textarea><br><br>
+
+        <button type="submit" onclick="fun4()">Next</button></span>
+    </form>
+
+    <script>
+        function fun4() {
+            //achievements
+            var course = document.getElementById("courses").value;
+            localStorage.setItem("coursess", course);
+
+            //projects
+            var project = document.getElementById("projects").value;
+            localStorage.setItem("projectss", project);
+        }
+    </script>
+</body>
+
+</html>

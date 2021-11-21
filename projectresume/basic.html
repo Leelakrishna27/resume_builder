@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>profile</title>
+
+</head>
+
+
+<body>
+    <form action="edu.html">
+        <span>
+    <h2>Fill the following details.</h2>
+
+    Full name:<input type="name" id="name" name="name" placeholder="Chandler Muriel Bing"><br><br> 
+    Email:<input type="Email" id="email" name="email" placeholder="example@123gmail.com"><br><br> 
+    Mobile number:<input type="Mobile" id="mobile" name="mobile" placeholder="+91-9876543210"><br><br>
+    <button type="submit" onclick="fun()">Next</button></span>
+    </form>
+
+    <script>
+        function fun() {
+            //name
+            var nam = document.getElementById("name").value;
+            localStorage.setItem("names", nam);
+
+            //email
+            var mail = document.getElementById("email").value;
+            localStorage.setItem("emails", mail);
+
+            //mobile
+            var mob = document.getElementById("mobile").value;
+            localStorage.setItem("mobiles", mob);
+        }
+    </script>
+</body>
+
+</html>
